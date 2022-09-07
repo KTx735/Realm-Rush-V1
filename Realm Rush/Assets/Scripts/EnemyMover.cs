@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    // Start is called before the first frame update
+    float secondToWait = 2f;
+    [SerializeField] List<Waypoint> path = new List<Waypoint>();
+
     void Start()
     {
-        
+        Debug.Log("Start Here");
+        StartCoroutine(FollowPath());
+        Debug.Log("Finish Start");
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator FollowPath()
     {
-        
+        foreach (Waypoint waypoint in path)
+        {
+            transform.position = waypoint.transform.position;
+            yield return new WaitForSeconds(secondToWait);
+        }
     }
 }
