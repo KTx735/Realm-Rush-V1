@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] int maxHitPoints = 5;
+    [SerializeField] int maxHitPoints = 20;
     int currentHitPoint = 0;
-    // Start is called before the first frame update
+
+    Enemy enemy;
+
     void Start()
+    {
+        enemy = GetComponent<Enemy>();
+    }
+
+    void onEnable()
     {
         currentHitPoint = maxHitPoints;
     }
@@ -21,7 +28,8 @@ public class EnemyHealth : MonoBehaviour
         currentHitPoint--;
         if(currentHitPoint <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            enemy.RewardGold();
         }
     }
 

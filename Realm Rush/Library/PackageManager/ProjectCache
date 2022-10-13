@@ -20,7 +20,7 @@ m_EmbeddedPackageManifests:
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/Users/Unity Projects/Realm-Rush/Realm Rush/Packages
-m_EditorVersion: 2021.3.9f1 (ad3870b89536)
+m_EditorVersion: 2021.3.11f1 (0a5ca18544bf)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@1.17.2
   testable: 0

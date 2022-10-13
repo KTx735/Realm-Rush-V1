@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3049131714819384361}
   - component: {fileID: 2096785622776419205}
+  - component: {fileID: 7042277738752842356}
   m_Layer: 0
   m_Name: Ballista
   m_TagString: Untagged
@@ -47,6 +48,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 3144582324300694500}
+  towerRange: 15
+  projectileParticles: {fileID: 912053630958255711}
+--- !u!114 &7042277738752842356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219458064393657486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c596d6ea4e53fc2488cdf08fb6b8822d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5732945763902168653
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,7 +4823,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -8469494145858465668, guid: af50c4e21f0e9b9419ff00e3c39e7711, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
