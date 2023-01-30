@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject enemy;
-    [SerializeField] int poolSize = 5;
-    [SerializeField] float spawnTime = 2;
+    [SerializeField] [Range(0f, 50f)] int poolSize = 5;
+    [SerializeField] [Range(0.1f, 30f)] float spawnTime = 2f;
 
     GameObject[] pool; //Will hold all the instantiated objects
 

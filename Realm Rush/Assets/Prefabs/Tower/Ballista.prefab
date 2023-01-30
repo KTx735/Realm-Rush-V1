@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 3144582324300694500}
-  towerRange: 15
+  towerRange: 10
   projectileParticles: {fileID: 912053630958255711}
 --- !u!114 &7042277738752842356
 MonoBehaviour:
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c596d6ea4e53fc2488cdf08fb6b8822d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 75
 --- !u!1 &5732945763902168653
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +169,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
